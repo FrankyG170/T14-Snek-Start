@@ -5,10 +5,10 @@
 
 Board::Board(Graphics & gfx)
 	:
-	gfx (gfx)
+	gfx (gfx),
+	width(Graphics::ScreenWidth / dimension),
+	height(Graphics::ScreenHeight / dimension)
 {
-	width = gfx.ScreenWidth / dimension;
-	height = gfx.ScreenHeight / dimension;
 }
 
 void Board::DrawCell(const Location & loc, Color c)

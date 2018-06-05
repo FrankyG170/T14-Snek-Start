@@ -12,7 +12,7 @@ public:
 	bool IsInsideBoard(const Location& loc)const;
 private:
 	static constexpr int dimension = 20;
-	int width;
-	int height;
+	const int width;
+	const int height;
 	Graphics& gfx;
 };
