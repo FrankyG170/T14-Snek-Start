@@ -61,6 +61,7 @@ void Game::UpdateModel()
 		{
 			delta_loc = { 1, 0 };
 		}
+		
 
 		snekMoveCounter++;
 		if (snekMoveCounter >= snekMovePeriod)
